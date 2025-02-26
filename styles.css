@@ -1,0 +1,9 @@
+.calculatorContainer {
+    margin: auto;
+    display: flex;
+    
+}
+    
+h1 {
+    text-align: center;
+}
