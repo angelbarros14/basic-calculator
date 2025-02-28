@@ -6,10 +6,8 @@
     height: 600px;
     background-color: #1C1C1C;
     padding: 10px;
-    border-radius: 30px;
-    
+    border-radius: 30px; 
 }
-
 
 .displayContainer {
     display: flex;
@@ -22,6 +20,8 @@ input {
     border-radius: 30px;
     border-style: none;
     margin: 10px;
+    font-size: 40px;
+    text-align: right;
 }
 
 .buttonContainer {
@@ -39,6 +39,7 @@ input {
     background-color: #505050;
     color: white;
     font-size: 20px;
+    border-style: none;
 }
 
 .btnUp {
@@ -47,6 +48,7 @@ input {
     border-radius: 30px;
     background-color: #D4D4D2;
     font-size: 20px;
+    border-style: none;
 
 }
 
@@ -57,10 +59,7 @@ input {
     background-color: #FF9500;
     color: white;
     font-size: 20px;
-}
-    
-h1 {
-    text-align: center;
+    border-style: none;
 }
 
 #zero {
