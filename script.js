@@ -36,7 +36,7 @@ buttons.forEach(btn =>  {
     })
 })
 
-const operators = document.querySelectorAll(".btnSide")
+const operators = document.querySelectorAll(".btnSide");
 operators.forEach(operator => {
     operator.addEventListener("click", (e) => {
         
@@ -44,13 +44,11 @@ operators.forEach(operator => {
             num1 = currentValue;
             currentValue = "";
         }
-        console.log(`num1 is ${num1}`);
 
         if (num1 != "" && num2 == "") {
             num2 = currentValue;
             currentValue = "";
         }
-        console.log(`num2 is ${num2}`);
         
         if (num1 != "" && num2 != "") {
             num1 = operate(currentOperator, parseFloat(num1), parseFloat(num2)).toString();
@@ -85,5 +83,14 @@ clear.addEventListener("click", () => {
 
 const del = document.querySelector("#delete");
 del.addEventListener("click", () => {
+    if (currentValue.length > 0) {
+        currentValue = currentValue.slice(0, -1);
+        updateDisplay();
+    }
+})
 
+const percent = document.querySelector("#percent");
+percent.addEventListener("click", () => {
+    currentValue = (currentValue / 100);
+    updateDisplay();
 })
