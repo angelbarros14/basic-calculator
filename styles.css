@@ -62,6 +62,19 @@ input {
     border-style: none;
 }
 
+.btn:hover {
+    background-color: gray;
+}
+
+.btnSide:hover {
+    background-color: white;
+    color: #FF9500;
+}
+
+.btnUp:hover {
+    background-color: white;
+}
+
 #zero {
     width: 200px;
 }
